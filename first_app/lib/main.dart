@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'assignment2.dart';
+import 'AssignmentWeek5.dart'; // import ไฟล์ที่มี ApiExampleList อยู่
 
 void main() {
   runApp(const MyApp());
@@ -11,13 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Air Quality App',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        useMaterial3: true,
-      ),
-      home: const AirQualityPage(),
+      debugShowCheckedModeBanner: false, // เอาแถบ debug ออก
+      title: 'Flutter API Demo',
+      theme: ThemeData(primarySwatch: Colors.amber),
+      home: const Assignmentweek5(),
     );
   }
 }
